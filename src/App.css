@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
+.App {
+  text-align: center;
+  background-color: #040C18;
+  color: #eee;
+
+}
+
+.icon {
+  color: yellow;
+  font-size: 1.5rem;
+}
+
+
+.movie-card{
+  width: 250px;
+  height: 490px;
+  position: relative;
+  overflow: hidden;
+  
+}
+.movie-card img{
+  height: 370px;
+  width: 250px;
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+}
+
+.movie-card-info{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 7rem;
+  background: linear-gradient(180deg,
+        rgba(4, 21, 45, 0) 0%,
+        #04152d 79.17%);
+  opacity: 0;
+}
+.movie-card:hover .movie-card-info{
+  opacity: 1;
+  animation: 1s ease-in;
+}
+
+
+form{
+  margin-bottom: 5rem;
+}
+
+form input{
+  padding: 0.8rem;
+  border-radius: 20px;
+  width: 30rem;
+}
+form button{
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 10rem;
+}
+.card-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 2;
+  margin: 0 6rem;
+
+}
+body{
+  max-height: 100vh;
+}
+
+.form{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  gap: 10px;
+  align-items: center;
+}
+
+.heroBanner {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+  .backdrop-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    overflow: hidden;
+  }
+    .lazy-load-image-background {
+      width: 100%;
+      height: 100%;
+    }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position:top;
+      }
+
+  .opacity-layer {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(180deg,
+    rgba(4, 21, 45, 0) 0%,
+    #04152d 79.17%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .heroBannerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      background-color: red;
+    }
+
+    .subTitle {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 40px;
+      margin-top: 400px;
+    }
+
+.input{
+    padding: 1rem;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputs{
+  display: flex;
+  gap: 3px;
+
+}
+.inputs input{
+  font-size: 1.2rem;
+  border-radius: 1.6rem;
+  padding: .6rem;
+}
+.input_t{
+  margin-right: 400px;
+  margin-top:110px;
+}
+.input_f{
+  margin-right: 400px;
+  margin-top: 110px;
+  width: 200px;
+  /* background-color: purple; */
+}  
+.input_t:focus{
+  outline: none;
+}
+.input_f:focus{
+  outline: none;
+}
+.TitleAdd{
+  /* background-color: red; */
+  /* margin-right: 700px; */
+  width: 10%;
+  /* float: inline-block; */
+}
+.AddDescription{
+  /* background-color: red; */
+  /* margin-right: 700px; */
+  width: 10%;
+  
+}
+.submit{
+  /* background-color: red; */
+  /* ma-bottom: 30px; */
+}
+.form_add{
+  /* background-color: yellow; */
+  display: flex;
+flex-direction: row;
+width: 100%;
+}
